@@ -1,7 +1,7 @@
-# Quick-Commerce Ad Scraper
+# Quick-Commerce and E-Commerce Ad Scraper
 
 CLI automation for capturing mobile viewport proof screenshots of sponsored
-product placements on Blinkit, Zepto, and Swiggy Instamart.
+product placements on Amazon, Flipkart, Blinkit, Zepto, and Swiggy Instamart in mobile viewport.
 
 ## Install
 
