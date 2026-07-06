@@ -1,0 +1,89 @@
+jobs:
+- platform: zepto
+  keyword: Shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: Shampoo small
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: Shampoo men
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: Paraben free shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: shampo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: shamp
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: rosemary shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: aloevera shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: anti hairfall shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: anti dandruff shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: coconut shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: coconut milk shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: protein shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: Conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: hair conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: hair condi
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: conditio
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: conditi
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: coconut conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: rosemary conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: protein conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: zepto
+  keyword: conditioner small
+  brand: Parachute
+  pincode: '122001'

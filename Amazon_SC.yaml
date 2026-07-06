@@ -1,0 +1,89 @@
+jobs:
+- platform: amazon
+  keyword: Shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Shampoo small
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Shampoo men
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Paraben free shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: shampo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: shamp
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: rosemary shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: aloevera shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: anti hairfall shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: anti dandruff shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: coconut shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: coconut milk shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: protein shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: hair conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: hair condi
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: conditio
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: conditi
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: coconut conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: rosemary conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: protein conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: conditioner small
+  brand: Parachute
+  pincode: '122001'

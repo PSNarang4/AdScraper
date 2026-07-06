@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+screenshots/
+run_log.json
+_prd_media/
+profiles/
+run_logs/
+debug/
+scratch/

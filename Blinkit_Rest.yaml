@@ -1,0 +1,165 @@
+jobs:
+  - platform: blinkit
+    keyword: baby soap
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby shampoo
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby wash
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby lotion
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby cream
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby powder
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby gift pack
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Hair Oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Almond Oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Rosemary oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Bhringraj oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Coconut oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Coconut oil for hair
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Hair Mask
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Hair cream
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Rosemary essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Tea tree essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Ayurvedic oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: hair growth serum
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Deo
+    brand: Set Wet
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Deo for men
+    brand: Set Wet
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Perfume
+    brand: Set Wet
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Perfumes
+    brand: Set Wet
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Perfume for men
+    brand: Set Wet
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Deodorant
+    brand: Set Wet
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed mustard oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed groundnut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed sesame oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed coconut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: mustard oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Sesame oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Groundnut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Muesli
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Plain oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Protein oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: High protein oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Honey
+    brand: Saffola
+    pincode: "122001"

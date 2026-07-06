@@ -1,0 +1,165 @@
+jobs:
+- platform: flipkart
+  keyword: baby soap
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: baby shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: baby oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: baby wash
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: baby lotion
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: baby cream
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: baby powder
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: baby gift pack
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Hair Oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Almond Oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Rosemary oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Bhringraj oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Coconut oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Coconut oil for hair
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Hair Mask
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Hair cream
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Rosemary essential oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Tea tree essential oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Essential oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Ayurvedic oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair growth serum
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Deo
+  brand: Set Wet
+  pincode: '122001'
+- platform: flipkart
+  keyword: Deo for men
+  brand: Set Wet
+  pincode: '122001'
+- platform: flipkart
+  keyword: Perfume
+  brand: Set Wet
+  pincode: '122001'
+- platform: flipkart
+  keyword: Perfumes
+  brand: Set Wet
+  pincode: '122001'
+- platform: flipkart
+  keyword: Perfume for men
+  brand: Set Wet
+  pincode: '122001'
+- platform: flipkart
+  keyword: Deodorant
+  brand: Set Wet
+  pincode: '122001'
+- platform: flipkart
+  keyword: Cold pressed oil
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Cold pressed mustard oil
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Cold pressed groundnut oil
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Cold pressed sesame oil
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Cold pressed coconut oil
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: mustard oil
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Sesame oil
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Groundnut oil
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Muesli
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Oats
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Plain oats
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Protein oats
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: High protein oats
+  brand: Saffola
+  pincode: '122001'
+- platform: flipkart
+  keyword: Honey
+  brand: Saffola
+  pincode: '122001'

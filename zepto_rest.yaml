@@ -1,0 +1,165 @@
+jobs:
+  - platform: zepto
+    keyword: baby soap
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: baby shampoo
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: baby oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: baby wash
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: baby lotion
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: baby cream
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: baby powder
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: baby gift pack
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Hair Oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Almond Oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Rosemary oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Bhringraj oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Coconut oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Coconut oil for hair
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Hair Mask
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Hair cream
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Rosemary essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Tea tree essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Ayurvedic oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: hair growth serum
+    brand: Parachute
+    pincode: "122001"
+  - platform: zepto
+    keyword: Deo
+    brand: Set Wet
+    pincode: "122001"
+  - platform: zepto
+    keyword: Deo for men
+    brand: Set Wet
+    pincode: "122001"
+  - platform: zepto
+    keyword: Perfume
+    brand: Set Wet
+    pincode: "122001"
+  - platform: zepto
+    keyword: Perfumes
+    brand: Set Wet
+    pincode: "122001"
+  - platform: zepto
+    keyword: Perfume for men
+    brand: Set Wet
+    pincode: "122001"
+  - platform: zepto
+    keyword: Deodorant
+    brand: Set Wet
+    pincode: "122001"
+  - platform: zepto
+    keyword: Cold pressed oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Cold pressed mustard oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Cold pressed groundnut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Cold pressed sesame oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Cold pressed coconut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: mustard oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Sesame oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Groundnut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Muesli
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Plain oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Protein oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: High protein oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: zepto
+    keyword: Honey
+    brand: Saffola
+    pincode: "122001"

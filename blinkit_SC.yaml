@@ -1,0 +1,89 @@
+jobs:
+- platform: blinkit
+  keyword: Shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: Shampoo small
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: Shampoo men
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: Paraben free shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: shampo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: shamp
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: rosemary shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: aloevera shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: anti hairfall shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: anti dandruff shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: coconut shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: coconut milk shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: protein shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: Conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: hair conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: hair condi
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: conditio
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: conditi
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: coconut conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: rosemary conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: protein conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: blinkit
+  keyword: conditioner small
+  brand: Parachute
+  pincode: '122001'

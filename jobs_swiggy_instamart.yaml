@@ -1,0 +1,133 @@
+jobs:
+  - platform: swiggy_instamart
+    keyword: Hair Oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Almond Oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Rosemary oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Bhringraj oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Coconut oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Coconut oil for hair
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Hair Mask
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Hair cream
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Rosemary essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Tea tree essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Essential oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Ayurvedic oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: hair growth serum
+    brand: Parachute
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Deo
+    brand: Set Wet
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Deo for men
+    brand: Set Wet
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Perfume
+    brand: Set Wet
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Perfumes
+    brand: Set Wet
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Perfume for men
+    brand: Set Wet
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Deodorant
+    brand: Set Wet
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Cold pressed oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Cold pressed mustard oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Cold pressed groundnut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Cold pressed sesame oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Cold pressed coconut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: mustard oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Sesame oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Groundnut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Muesli
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Plain oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Protein oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: High protein oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: swiggy_instamart
+    keyword: Honey
+    brand: Saffola
+    pincode: "122001"

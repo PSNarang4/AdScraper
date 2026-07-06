@@ -1,0 +1,165 @@
+jobs:
+- platform: amazon
+  keyword: baby soap
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: baby shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: baby oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: baby wash
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: baby lotion
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: baby cream
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: baby powder
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: baby gift pack
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Hair Oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Almond Oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Rosemary oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Bhringraj oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Coconut oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Coconut oil for hair
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Hair Mask
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Hair cream
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Rosemary essential oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Tea tree essential oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Essential oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Ayurvedic oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: hair growth serum
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Deo
+  brand: Set Wet
+  pincode: '122001'
+- platform: amazon
+  keyword: Deo for men
+  brand: Set Wet
+  pincode: '122001'
+- platform: amazon
+  keyword: Perfume
+  brand: Set Wet
+  pincode: '122001'
+- platform: amazon
+  keyword: Perfumes
+  brand: Set Wet
+  pincode: '122001'
+- platform: amazon
+  keyword: Perfume for men
+  brand: Set Wet
+  pincode: '122001'
+- platform: amazon
+  keyword: Deodorant
+  brand: Set Wet
+  pincode: '122001'
+- platform: amazon
+  keyword: Cold pressed oil
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Cold pressed mustard oil
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Cold pressed groundnut oil
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Cold pressed sesame oil
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Cold pressed coconut oil
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: mustard oil
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Sesame oil
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Groundnut oil
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Muesli
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Oats
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Plain oats
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Protein oats
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: High protein oats
+  brand: Saffola
+  pincode: '122001'
+- platform: amazon
+  keyword: Honey
+  brand: Saffola
+  pincode: '122001'

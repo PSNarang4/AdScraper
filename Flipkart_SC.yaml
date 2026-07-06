@@ -1,0 +1,89 @@
+jobs:
+- platform: flipkart
+  keyword: Shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Shampoo small
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Shampoo men
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Paraben free shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: shampo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: shamp
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: rosemary shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: aloevera shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: anti hairfall shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: anti dandruff shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: coconut shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: coconut milk shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: protein shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair condi
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: conditio
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: conditi
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: coconut conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: rosemary conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: protein conditioner
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: conditioner small
+  brand: Parachute
+  pincode: '122001'
