@@ -1,7 +1,7 @@
 # Quick-Commerce and E-Commerce Ad Scraper
 
 CLI automation for capturing mobile viewport proof screenshots of sponsored
-product placements on Amazon, Flipkart, Blinkit, Zepto, and Swiggy Instamart in mobile viewport.
+product placements on Amazon, Flipkart, Blinkit, and Zepto in mobile viewport.
 
 ## Install
 
@@ -14,8 +14,24 @@ playwright install chromium
 
 ## Single Run
 
+**Amazon:**
+```powershell
+python scraper.py --platform amazon --keyword "baby soap" --brand "parachute" --pincode 122001 --match-type broad --scroll-depth 3
+```
+
+**Flipkart:**
+```powershell
+python scraper.py --platform flipkart --keyword "hair oil" --brand "parachute" --pincode 122001 --match-type broad --scroll-depth 3
+```
+
+**Blinkit:**
 ```powershell
 python scraper.py --platform blinkit --keyword "essential oils" --brand "parachute" --pincode 122001 --match-type broad --scroll-depth 3
+```
+
+**Zepto:**
+```powershell
+python scraper.py --platform zepto --keyword "mustard oil" --brand "saffola" --pincode 122001 --match-type broad --scroll-depth 3
 ```
 
 Screenshots are saved under:
