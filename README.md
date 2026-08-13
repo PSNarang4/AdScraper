@@ -1,18 +1,48 @@
-# Quick-Commerce and E-Commerce Ad Scraper
+# Quick-Commerce & E-Commerce Ad Scraper
 
-CLI automation for capturing mobile viewport proof screenshots of sponsored
-product placements on Amazon, Flipkart, Blinkit, and Zepto in mobile viewport.
+A robust, high-performance CLI tool and batch runner for capturing mobile viewport proof screenshots of sponsored product placements on major Indian Quick-Commerce and E-Commerce platforms: **Amazon**, **Flipkart**, **Flipkart Minutes**, **Blinkit**, and **Zepto**.
 
-## Install
+---
+
+## 🚀 One-Command Setup (New Device Setup)
+
+Get up and running on any new machine with a single command!
+
+### 🪟 Windows (PowerShell)
+Open PowerShell in the repository directory and run:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-playwright install chromium
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ```
 
-## Single Run
+*(Or copy-paste this direct single-line command):*
+```powershell
+python -m venv .venv; .\.venv\Scripts\Activate.ps1; python -m pip install --upgrade pip; pip install -r requirements.txt; playwright install chromium
+```
+
+---
+
+### 🐧 macOS / Linux (Bash / Zsh)
+Open Terminal in the repository directory and run:
+
+```bash
+chmod +x setup.sh && ./setup.sh
+```
+
+*(Or copy-paste this direct single-line command):*
+```bash
+python3 -m venv .venv && source .venv/bin/activate && python3 -m pip install --upgrade pip && pip install -r requirements.txt && playwright install chromium
+```
+
+---
+
+## ⚡ Quick Start
+
+Always activate your virtual environment first if opening a new terminal session:
+- **Windows (PowerShell):** `.\.venv\Scripts\Activate.ps1`
+- **macOS / Linux:** `source .venv/bin/activate`
+
+### 1. Single Keyword Scraper Commands
 
 **Amazon:**
 ```powershell
@@ -22,6 +52,11 @@ python scraper.py --platform amazon --keyword "baby soap" --brand "parachute" --
 **Flipkart:**
 ```powershell
 python scraper.py --platform flipkart --keyword "hair oil" --brand "parachute" --pincode 122001 --match-type broad --scroll-depth 3
+```
+
+**Flipkart Minutes:**
+```powershell
+python scraper.py --platform flipkart_minutes --keyword "milk" --brand "amul" --pincode 560001 --match-type broad --scroll-depth 3
 ```
 
 **Blinkit:**
@@ -34,92 +69,115 @@ python scraper.py --platform blinkit --keyword "essential oils" --brand "parachu
 python scraper.py --platform zepto --keyword "mustard oil" --brand "saffola" --pincode 122001 --match-type broad --scroll-depth 3
 ```
 
-Screenshots are saved under:
+---
 
-```text
-screenshots/<platform>/<YYYY-MM-DD_HH-MM-SS>/
-```
-
-All keyword screenshots captured in the same platform session are kept together
-in that timestamped folder. Sponsored placement captures use this filename
-pattern:
-
-```text
-{platform}__{keyword}__{brand_filter}__{YYYY-MM-DD_HH-MM-SS}__placement_{n}.png
-```
-
-Placement screenshots are viewport screenshots, not cropped card screenshots.
-If two matching ad cards are visible together, one placement screenshot can show
-both cards.
-
-By default, screenshots are saved only when a visible `Ad`/`Sponsored` tag is
-detected on a card that also matches the requested brand and keyword. The
-scraper checks the initial result viewport and then up to three scrolls by
-default; if the brand's tagged ad is not seen there, it does not save a
-screenshot.
-
-Use `--match-type` to control how the ad card text must match the keyword:
-
-```text
-broad  - all keyword words must appear, allowing simple singular/plural forms
-phrase - keyword words must appear in order as a phrase
-exact  - strict phrase/product-intent match inside the card text
-none   - do not filter ad cards by keyword text
-```
-
-To stop after the first matching ad placement screenshot:
+### 2. Multi-Keyword Single Run
+Search multiple keywords in sequence under a single platform session:
 
 ```powershell
-python scraper.py --platform blinkit --keyword "essential oils" --brand "parachute" --pincode 122001 --match-type broad --first-placement-only
+python scraper.py --platform blinkit --keywords "essential oils" "rosemary oil" "tea tree oil" --brand "parachute" --pincode 122001 --match-type broad --first-placement-only
 ```
 
-To reuse a logged-in browser session, launch a persistent scraper profile in
-headful mode and log in once. Use `--login-phone` to type your number into the
-login form automatically, then use `--login-wait-ms` to leave time for OTP or
-manual completion:
+---
 
-```powershell
-python scraper.py --platform blinkit --keyword "essential oils" --brand "parachute" --pincode 122001 --user-data-dir .\profiles\blinkit-edge --browser-channel msedge --headful --login-phone 9999999999 --login-wait-ms 120000 --first-placement-only
-```
+### 3. Batch Execution via YAML Configuration
 
-After the login/session is saved in that profile folder, later runs can reuse it
-with the same `--user-data-dir` and without `--login-wait-ms`. Avoid pointing
-this at your normal Edge/Chrome profile while that browser is already open; use
-a dedicated scraper profile folder instead.
-
-To run multiple keywords with the same platform/brand/pincode settings:
-
-```powershell
-python scraper.py --platform blinkit --keywords "essential oils" "rosemary essential oil" "tea tree essential oil" --brand "parachute" --pincode 122001 --match-type broad --first-placement-only
-```
-
-For multiple keywords with the same platform, pincode, browser profile, and
-login settings, the scraper opens the platform once, searches each keyword in
-sequence, and keeps all captures in the same timestamped folder. Different
-platform/session groups are run concurrently.
-
-## Batch Run
+Execute multiple platform/keyword scraping jobs concurrently:
 
 ```powershell
 python scraper.py --config jobs.yaml --output ./screenshots
 ```
 
-Batch mode groups compatible jobs into shared platform sessions. Separate
-platform/session groups run concurrently.
+#### Example `jobs.yaml`:
+```yaml
+jobs:
+  - platform: amazon
+    keyword: "baby soap"
+    brand: "parachute"
+    pincode: "122001"
+    match_type: broad
+    scroll_depth: 3
 
-## Notes
+  - platform: blinkit
+    keyword: "hair oil"
+    brand: "parachute"
+    pincode: "110001"
+    match_type: phrase
+    first_placement_only: true
 
-- The browser context uses Playwright's `Samsung Galaxy S20 Ultra` device profile
-  when available, with a PRD-matched fallback of 412x915 and DPR 3.5.
-- Placement screenshots are only saved when matching tagged ad cards are visible.
-  Organic cards can appear in the same viewport, but they do not trigger capture.
-- Extra mobile `__screen.png` debug captures are off by default. Pass
-  `--save-screen` if you want an additional viewport screenshot after a matching
-  tagged ad is found or when a run hits a login/CAPTCHA/error path.
-- Legacy CSS/position heuristics are off by default. Use
-  `--allow-untagged-fallback --allow-position-fallback` only when you knowingly
-  want non-tagged fallback detection.
-- CAPTCHA and login/bot-detection pages are logged and skipped. This tool does
-  not solve CAPTCHAs, purchase products, or interact with carts.
-- `run_log.json` is written after each job folder run, and batch runs also write
-  an aggregate log in the output directory.
+  - platform: zepto
+    keyword: "mustard oil"
+    brand: "saffola"
+    pincode: "560001"
+    match_type: broad
+```
+
+---
+
+## 🛠️ CLI Flags & Configuration Options
+
+| Option | Description | Default |
+| :--- | :--- | :--- |
+| `--platform` | Target platform (`amazon`, `flipkart`, `flipkart_minutes`, `blinkit`, `zepto`) | *Required* |
+| `--keyword` | Single search keyword query | *Required (or `--keywords`) |
+| `--keywords` | Space-separated list of keywords for sequential run | `None` |
+| `--brand` / `--brand-filter` | Filter captured ads by brand name matching | `""` |
+| `--pincode` / `--city-pincode` | Delivery location pincode to set before capture | *Required* |
+| `--match-type` | Ad card matching rule: `broad`, `phrase`, `exact`, or `none` | `none` |
+| `--scroll-depth` | Number of viewport scroll steps to inspect | `3` |
+| `--first-placement-only` | Stop immediately after capturing the first matching ad | `false` |
+| `--headful` / `--headless` | Run browser in visible window or background headless mode | `--headless` |
+| `--user-data-dir` | Path to persistent browser profile directory | `None` |
+| `--browser-channel` | Browser engine channel (`chromium`, `chrome`, `msedge`) | `chromium` |
+| `--login-phone` | Phone number for automated login prompt filling | `""` |
+| `--login-wait-ms` | Pause time (ms) for OTP completion during headful login | `0` |
+| `--config` | Path to YAML or JSON batch job configuration file | `None` |
+| `--output` | Root directory for output screenshots and logs | `./screenshots` |
+
+---
+
+## 📁 Output Directory & File Naming Structure
+
+Screenshots and execution logs are organized dynamically:
+
+```text
+screenshots/
+├── <platform>/
+│   └── <YYYY-MM-DD_HH-MM-SS>/
+│       ├── <platform>__<keyword>__<brand>__<timestamp>__placement_1.png
+│       ├── <platform>__<keyword>__<brand>__<timestamp>__placement_2.png
+│       └── run_log.json
+└── aggregate_run_log.json
+```
+
+- **Placement Screenshots**: Full mobile viewport captures centered on detected sponsored ad cards (not tightly cropped clips), preserving exact visual placement proof.
+- **Run Logs**: Detailed JSON breakdown recording scroll state, matching metadata, warnings, and screenshot manifests for auditability.
+
+---
+
+## 🔑 Persistent Sessions & Automated Login
+
+To maintain logged-in status or bypass repeated OTP verification across scraper runs:
+
+1. Launch in headful mode with a dedicated browser profile path:
+```powershell
+python scraper.py --platform blinkit --keyword "hair oil" --brand "parachute" --pincode 122001 --user-data-dir .\profiles\blinkit_session --browser-channel msedge --headful --login-phone 9876543210 --login-wait-ms 90000
+```
+2. Complete OTP verification once.
+3. Subsequent automated runs will re-use session cookies saved under `.\profiles\blinkit_session` without needing `--login-wait-ms`.
+
+---
+
+## 🧪 Running Unit Tests
+
+Verify installation integrity and core logic:
+
+```bash
+python -m unittest discover tests
+```
+
+---
+
+## 📜 License
+
+Internal Automation Utility for E-Commerce & Quick-Commerce Competitive Ad Tracking.
