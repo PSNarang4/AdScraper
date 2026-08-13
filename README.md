@@ -36,13 +36,70 @@ python3 -m venv .venv && source .venv/bin/activate && python3 -m pip install --u
 
 ---
 
-## ⚡ Quick Start
+## 📋 Running Scrapers for Your Own Brand & Keywords
 
-Always activate your virtual environment first if opening a new terminal session:
-- **Windows (PowerShell):** `.\.venv\Scripts\Activate.ps1`
-- **macOS / Linux:** `source .venv/bin/activate`
+You can easily set up your own brand and custom keyword list in a `.yaml` configuration file and run the scraper with persistent browser sessions and headful/headless controls.
 
-### 1. Single Keyword Scraper Commands
+### Step 1: Create Your Custom Keyword YAML File
+
+Create a YAML file (e.g., `MyBrand_Keywords.yaml`) in the project directory:
+
+```yaml
+jobs:
+  - platform: amazon
+    keyword: Shampoo
+    brand: Parachute
+    pincode: '122001'
+
+  - platform: amazon
+    keyword: anti hairfall shampoo
+    brand: Parachute
+    pincode: '122001'
+
+  - platform: amazon
+    keyword: coconut milk shampoo
+    brand: Parachute
+    pincode: '122001'
+```
+
+---
+
+### Step 2: Run Batch Commands with CLI Overrides
+
+Pass your YAML file with `--config` and customize flags like browser profile (`--user-data-dir`), channel (`--browser-channel`), headful mode (`--headful`), placement limits (`--first-placement-only`), and scroll depth (`--scroll-depth`).
+
+CLI flags passed on the command line automatically apply to **all jobs** in your YAML file!
+
+#### 🛒 Amazon Custom Run:
+```powershell
+.\.venv\Scripts\python.exe scraper.py --config Amazon_SC.yaml --user-data-dir .\profiles\amazon-edge --browser-channel msedge --headful --first-placement-only --scroll-depth 3
+```
+
+#### 🛍️ Flipkart Custom Run:
+```powershell
+.\.venv\Scripts\python.exe scraper.py --config Flipkart_SC.yaml --user-data-dir .\profiles\flipkart-edge --browser-channel msedge --headful --first-placement-only --scroll-depth 3
+```
+
+#### ⚡ Flipkart Minutes Custom Run:
+```powershell
+.\.venv\Scripts\python.exe scraper.py --config Flipkart_SC.yaml --platform flipkart_minutes --user-data-dir .\profiles\flipkart-minutes --browser-channel msedge --headful --first-placement-only --scroll-depth 3
+```
+
+#### 🟡 Blinkit Custom Run:
+```powershell
+.\.venv\Scripts\python.exe scraper.py --config blinkit_keywords.yaml --user-data-dir .\profiles\blinkit-edge --browser-channel msedge --headful --first-placement-only --scroll-depth 3
+```
+
+#### 🟣 Zepto Custom Run:
+```powershell
+.\.venv\Scripts\python.exe scraper.py --config zepto_keywords.yaml --user-data-dir .\profiles\zepto-edge --browser-channel msedge --headful --first-placement-only --scroll-depth 3
+```
+
+---
+
+## ⚡ Quick Start (Single Job CLI Commands)
+
+If you want to quickly test a single keyword without creating a YAML file:
 
 **Amazon:**
 ```powershell
@@ -71,8 +128,8 @@ python scraper.py --platform zepto --keyword "mustard oil" --brand "saffola" --p
 
 ---
 
-### 2. Multi-Keyword Single Run
-Search multiple keywords in sequence under a single platform session:
+### Multi-Keyword Single Command Run
+Run multiple keywords sequentially without a YAML file:
 
 ```powershell
 python scraper.py --platform blinkit --keywords "essential oils" "rosemary oil" "tea tree oil" --brand "parachute" --pincode 122001 --match-type broad --first-placement-only
@@ -80,59 +137,38 @@ python scraper.py --platform blinkit --keywords "essential oils" "rosemary oil" 
 
 ---
 
-### 3. Batch Execution via YAML Configuration
-
-Execute multiple platform/keyword scraping jobs concurrently:
-
-```powershell
-python scraper.py --config jobs.yaml --output ./screenshots
-```
-
-#### Example `jobs.yaml`:
-```yaml
-jobs:
-  - platform: amazon
-    keyword: "baby soap"
-    brand: "parachute"
-    pincode: "122001"
-    match_type: broad
-    scroll_depth: 3
-
-  - platform: blinkit
-    keyword: "hair oil"
-    brand: "parachute"
-    pincode: "110001"
-    match_type: phrase
-    first_placement_only: true
-
-  - platform: zepto
-    keyword: "mustard oil"
-    brand: "saffola"
-    pincode: "560001"
-    match_type: broad
-```
-
----
-
-## 🛠️ CLI Flags & Configuration Options
+## 🛠️ CLI Flags & Configuration Options Reference
 
 | Option | Description | Default |
 | :--- | :--- | :--- |
-| `--platform` | Target platform (`amazon`, `flipkart`, `flipkart_minutes`, `blinkit`, `zepto`) | *Required* |
-| `--keyword` | Single search keyword query | *Required (or `--keywords`) |
+| `--config` | Path to YAML or JSON batch job configuration file (e.g. `Amazon_SC.yaml`) | `None` |
+| `--platform` | Target platform (`amazon`, `flipkart`, `flipkart_minutes`, `blinkit`, `zepto`) | *Required in CLI or YAML* |
+| `--keyword` | Single search keyword query | *Required in CLI or YAML* |
 | `--keywords` | Space-separated list of keywords for sequential run | `None` |
 | `--brand` / `--brand-filter` | Filter captured ads by brand name matching | `""` |
-| `--pincode` / `--city-pincode` | Delivery location pincode to set before capture | *Required* |
+| `--pincode` / `--city-pincode` | Delivery location pincode to set before capture | *Required in CLI or YAML* |
 | `--match-type` | Ad card matching rule: `broad`, `phrase`, `exact`, or `none` | `none` |
 | `--scroll-depth` | Number of viewport scroll steps to inspect | `3` |
 | `--first-placement-only` | Stop immediately after capturing the first matching ad | `false` |
 | `--headful` / `--headless` | Run browser in visible window or background headless mode | `--headless` |
-| `--user-data-dir` | Path to persistent browser profile directory | `None` |
+| `--user-data-dir` | Path to persistent browser profile directory (e.g. `.\profiles\amazon-edge`) | `None` |
 | `--browser-channel` | Browser engine channel (`chromium`, `chrome`, `msedge`) | `chromium` |
 | `--login-phone` | Phone number for automated login prompt filling | `""` |
 | `--login-wait-ms` | Pause time (ms) for OTP completion during headful login | `0` |
-| `--config` | Path to YAML or JSON batch job configuration file | `None` |
 | `--output` | Root directory for output screenshots and logs | `./screenshots` |
+
+---
+
+## 🔑 Persistent Sessions & Automated Login Workflow
+
+To maintain logged-in status or bypass repeated OTP verification across scraper runs:
+
+1. Launch in headful mode with a dedicated browser profile directory:
+```powershell
+.\.venv\Scripts\python.exe scraper.py --platform blinkit --keyword "hair oil" --brand "parachute" --pincode 122001 --user-data-dir .\profiles\blinkit-edge --browser-channel msedge --headful --login-phone 9876543210 --login-wait-ms 90000
+```
+2. Log in / complete OTP verification once during the initial pause window.
+3. All future runs pointing to `--user-data-dir .\profiles\blinkit-edge` will automatically reuse your authenticated session cookies.
 
 ---
 
@@ -150,21 +186,8 @@ screenshots/
 └── aggregate_run_log.json
 ```
 
-- **Placement Screenshots**: Full mobile viewport captures centered on detected sponsored ad cards (not tightly cropped clips), preserving exact visual placement proof.
+- **Placement Screenshots**: Full mobile viewport captures centered on detected sponsored ad cards, preserving exact visual placement proof.
 - **Run Logs**: Detailed JSON breakdown recording scroll state, matching metadata, warnings, and screenshot manifests for auditability.
-
----
-
-## 🔑 Persistent Sessions & Automated Login
-
-To maintain logged-in status or bypass repeated OTP verification across scraper runs:
-
-1. Launch in headful mode with a dedicated browser profile path:
-```powershell
-python scraper.py --platform blinkit --keyword "hair oil" --brand "parachute" --pincode 122001 --user-data-dir .\profiles\blinkit_session --browser-channel msedge --headful --login-phone 9876543210 --login-wait-ms 90000
-```
-2. Complete OTP verification once.
-3. Subsequent automated runs will re-use session cookies saved under `.\profiles\blinkit_session` without needing `--login-wait-ms`.
 
 ---
 
