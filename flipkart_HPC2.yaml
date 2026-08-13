@@ -1,0 +1,222 @@
+jobs:
+# --- Flipkart Normal ---
+# --- Livon ---
+- platform: flipkart
+  keyword: loreal shampoo 1 litre
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: tresemme shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: livon serum
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair serum for dry and frizzy hair
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair serum
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: tresemme
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: loreal shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: shampoo 1 litre
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair serum for dry hair
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair serum for frizzy hair
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair serum for women
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair serum for men
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: livon hair serum
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: serum for hair
+  brand: livon
+  pincode: '122001'
+
+# --- Parachute ---
+- platform: flipkart
+  keyword: hair cream
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair mask for men
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair cream for men
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair cream for women
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair mask
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: hair mask for dry hair
+  brand: Parachute
+  pincode: '122001'
+
+# --- Hair & Care ---
+- platform: flipkart
+  keyword: almond oil for hair
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart
+  keyword: almond hair oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart
+  keyword: almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart
+  keyword: sweet almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart
+  keyword: sweet almond hair oil
+  brand: hair & care
+  pincode: '122001'
+
+# --- Flipkart Minutes ---
+# --- Livon ---
+- platform: flipkart_minutes
+  keyword: loreal shampoo 1 litre
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: tresemme shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: livon serum
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair serum for dry and frizzy hair
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair serum
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: tresemme
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: loreal shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: shampoo 1 litre
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair serum for dry hair
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair serum for frizzy hair
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair serum for women
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair serum for men
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: livon hair serum
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: serum for hair
+  brand: livon
+  pincode: '122001'
+
+# --- Parachute ---
+- platform: flipkart_minutes
+  keyword: hair cream
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair mask for men
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair cream for men
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair cream for women
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair mask
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: hair mask for dry hair
+  brand: Parachute
+  pincode: '122001'
+
+# --- Hair & Care ---
+- platform: flipkart_minutes
+  keyword: almond oil for hair
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: almond hair oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: sweet almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: sweet almond hair oil
+  brand: hair & care
+  pincode: '122001'

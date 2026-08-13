@@ -74,14 +74,26 @@ DETECTION_SCRIPT = """
 
   function closestCard(labelEl) {
     let current = labelEl;
+    let best = null;
+    let bestArea = 0;
     for (let depth = 0; current && depth < 16; depth += 1, current = current.parentElement) {
       if (current === document.body || current === document.documentElement) break;
       const score = productCardScore(current);
       if (score >= 4) {
-        return current;
+        const rect = current.getBoundingClientRect();
+        const area = rect.width * rect.height;
+        if (!best) {
+          best = current;
+          bestArea = area;
+        } else if (area <= bestArea * 1.35) {
+          best = current;
+          bestArea = area;
+        } else {
+          break;
+        }
       }
     }
-    return null;
+    return best;
   }
 
   function sortedVisibleProductCards() {

@@ -16,7 +16,7 @@ def build_parser() -> argparse.ArgumentParser:
         description="Capture mobile screenshots of sponsored product cards on quick-commerce platforms."
     )
     parser.add_argument("--config", type=Path, help="YAML or JSON config containing a jobs list.")
-    parser.add_argument("--platform", choices=("blinkit", "zepto", "swiggy_instamart", "flipkart", "amazon"), help="Platform to scrape.")
+    parser.add_argument("--platform", choices=("blinkit", "zepto", "flipkart", "flipkart_minutes", "flipkart-minutes", "amazon"), help="Platform to scrape.")
     parser.add_argument("--keyword", help="Search keyword, for example 'chips'.")
     parser.add_argument(
         "--keywords",
@@ -187,7 +187,9 @@ def expand_keywords(keyword: str | None, keywords: list[str] | None) -> list[str
 
 async def run_jobs(jobs: list[ScraperJob]):
     grouped_jobs = group_jobs_for_platform_sessions(jobs)
-    grouped_logs = await asyncio.gather(*(run_job_group(group) for group in grouped_jobs))
+    grouped_logs = []
+    for group in grouped_jobs:
+        grouped_logs.append(await run_job_group(group))
     logs = [log for group in grouped_logs for log in group]
 
     output_dirs = {job.output_dir for job in jobs}

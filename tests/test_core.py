@@ -23,14 +23,14 @@ class CoreTests(unittest.TestCase):
     def test_job_accepts_prd_brand_and_pincode_aliases(self):
         job = ScraperJob.from_mapping(
             {
-                "platform": "swiggy",
+                "platform": "blinkit",
                 "keyword": "chips",
                 "brand": "Lays",
                 "pincode": "110001",
                 "match_type": "phrase",
             }
         )
-        self.assertEqual(job.platform, "swiggy_instamart")
+        self.assertEqual(job.platform, "blinkit")
         self.assertEqual(job.brand_filter, "Lays")
         self.assertEqual(job.city_pincode, "110001")
         self.assertEqual(job.match_type, "phrase")

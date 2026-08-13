@@ -1,0 +1,101 @@
+jobs:
+- platform: amazon
+  keyword: Keratin shampoo
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: Hyaluron shampoo
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: Hair serum
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Serum for hair
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby lotion
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby cream
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby gift pack
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby powder
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby soap
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby wipes
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Almond hair oil
+  brand: hair & care
+  pincode: '122001'
+- platform: amazon
+  keyword: cream for baby
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: baby gift set
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: amazon
+  keyword: Almond oil for hair
+  brand: hair & care
+  pincode: '122001'
+- platform: amazon
+  keyword: Sweet almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby wash
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby cream for newborn
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby care kit
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Baby massage oil
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Hair serum for women
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Hair serum for men
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: Shampoo
+  brand: Parachute
+  pincode: '122001'

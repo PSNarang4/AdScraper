@@ -1,0 +1,97 @@
+jobs:
+  - platform: blinkit
+    keyword: Muesli
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Plain oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Protein oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: High protein oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Honey
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: masala oats
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: chocolate muesli
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed mustard oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed groundnut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed sesame oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Cold pressed coconut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: mustard oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Sesame oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: Groundnut oil
+    brand: Saffola
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby soap
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby shampoo
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby oil
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby wash
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby lotion
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby cream
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby powder
+    brand: Parachute
+    pincode: "122001"
+  - platform: blinkit
+    keyword: baby gift pack
+    brand: Parachute
+    pincode: "122001"

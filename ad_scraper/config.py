@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 
-SUPPORTED_PLATFORMS = {"blinkit", "zepto", "swiggy_instamart", "flipkart", "amazon"}
+SUPPORTED_PLATFORMS = {"blinkit", "zepto", "flipkart", "flipkart_minutes", "amazon"}
 SUPPORTED_MATCH_TYPES = {"none", "broad", "phrase", "exact"}
 SUPPORTED_BROWSER_CHANNELS = {"chromium", "chrome", "msedge"}
 
@@ -87,13 +87,7 @@ class ScraperJob:
 
 
 def normalize_platform(value: str) -> str:
-    value = value.lower().strip().replace("-", "_")
-    aliases = {
-        "swiggy": "swiggy_instamart",
-        "instamart": "swiggy_instamart",
-        "swiggyinstamart": "swiggy_instamart",
-    }
-    return aliases.get(value, value)
+    return value.lower().strip().replace("-", "_")
 
 
 def slugify(value: str, fallback: str = "all") -> str:

@@ -52,38 +52,10 @@ jobs:
   brand: Parachute
   pincode: '122001'
 - platform: flipkart
-  keyword: Conditioner
+  keyword: shampoo for women
   brand: Parachute
   pincode: '122001'
 - platform: flipkart
-  keyword: hair conditioner
-  brand: Parachute
-  pincode: '122001'
-- platform: flipkart
-  keyword: hair condi
-  brand: Parachute
-  pincode: '122001'
-- platform: flipkart
-  keyword: conditio
-  brand: Parachute
-  pincode: '122001'
-- platform: flipkart
-  keyword: conditi
-  brand: Parachute
-  pincode: '122001'
-- platform: flipkart
-  keyword: coconut conditioner
-  brand: Parachute
-  pincode: '122001'
-- platform: flipkart
-  keyword: rosemary conditioner
-  brand: Parachute
-  pincode: '122001'
-- platform: flipkart
-  keyword: protein conditioner
-  brand: Parachute
-  pincode: '122001'
-- platform: flipkart
-  keyword: conditioner small
+  keyword: shampoo for men
   brand: Parachute
   pincode: '122001'

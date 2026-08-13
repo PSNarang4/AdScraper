@@ -60,14 +60,10 @@ async def run_job_group(jobs: list[ScraperJob]) -> list[RunLog]:
 
         try:
             spec = PLATFORMS[setup_job.platform]
-            if setup_job.platform == "swiggy_instamart":
+            stealth_warning = await apply_stealth(page)
+            if stealth_warning:
                 for log in logs:
-                    log.warnings.append("Stealth disabled for Swiggy Instamart because it triggers Swiggy request blocking.")
-            else:
-                stealth_warning = await apply_stealth(page)
-                if stealth_warning:
-                    for log in logs:
-                        log.warnings.append(stealth_warning)
+                    log.warnings.append(stealth_warning)
 
             setup_warning_start = len(logs[0].warnings)
             await prepare_platform_page(page, spec, setup_job, logs[0])
@@ -192,7 +188,7 @@ async def hide_original_header(page: Any, platform: str) -> None:
                         padding-top: 84px !important;
                     }
                 `;
-            } else if (p === "flipkart") {
+            } else if (p === "flipkart" || p === "flipkart_minutes") {
                 let hideSelectors = [
                     'header', '[role="banner"]', 'div[class*="responsive-wrapper"]'
                 ];
@@ -235,6 +231,9 @@ async def hide_original_header(page: Any, platform: str) -> None:
             }
             
             style.textContent = styleText + `
+                body {
+                    padding-bottom: 600px !important;
+                }
                 /* Convert product list grid from 2 columns to 3 columns (span 4 instead of span 6) */
                 div[style*="grid-column: span 6"],
                 div[style*="grid-column:span 6"],
@@ -262,7 +261,7 @@ async def hide_original_header(page: Any, platform: str) -> None:
             `;
             
             // Adjust Flipkart's dynamic container padding and Sort/Filter bar positions
-            if (p === "flipkart") {
+            if (p === "flipkart" || p === "flipkart_minutes") {
                 const headerElements = Array.from(document.querySelectorAll('*')).filter(el => {
                     const style = window.getComputedStyle(el);
                     const topVal = parseFloat(style.top) || 0;
@@ -305,9 +304,7 @@ async def prepare_platform_page(page: Any, spec: PlatformSpec, job: ScraperJob, 
     await page.goto(spec.base_url, wait_until="domcontentloaded", timeout=30000)
     await inject_clean_styles(page, job.platform)
     await human_delay()
-    if job.platform == "swiggy_instamart":
-        await page.wait_for_timeout(12000)
-        await recover_swiggy_error_page(page, log)
+
     await dismiss_obvious_modals(page)
     await handle_login(page, spec, job, log)
     await set_location(page, spec, job.city_pincode, log)
@@ -315,45 +312,6 @@ async def prepare_platform_page(page: Any, spec: PlatformSpec, job: ScraperJob, 
     await inject_clean_styles(page, job.platform)
 
 
-async def recover_swiggy_error_page(page: Any, log: RunLog, max_attempts: int = 10) -> None:
-    for attempt in range(1, max_attempts + 1):
-        state = await swiggy_error_state(page)
-        if state != "something_went_wrong":
-            return
-
-        log.warnings.append(f"Swiggy showed 'Something went wrong'; retrying refresh {attempt}/{max_attempts}.")
-        clicked_retry = False
-        for selector in ("button:has-text('Retry')", "text=/retry/i", "button:has-text('Try Again')"):
-            try:
-                locator = page.locator(selector).first
-                if await locator.count() and await locator.is_visible(timeout=1000):
-                    await locator.click()
-                    clicked_retry = True
-                    break
-            except Exception:
-                continue
-
-        if not clicked_retry:
-            try:
-                await page.reload(wait_until="domcontentloaded", timeout=30000)
-            except Exception:
-                await page.goto(page.url, wait_until="domcontentloaded", timeout=30000)
-        await page.wait_for_timeout(5000)
-
-    if await swiggy_error_state(page) == "something_went_wrong":
-        log.warnings.append("Swiggy still showed 'Something went wrong' after 10 refresh attempts.")
-
-
-async def swiggy_error_state(page: Any) -> str | None:
-    try:
-        body = (await page.locator("body").inner_text(timeout=5000)).lower()
-    except Exception:
-        return None
-    if "something went wrong" in body:
-        return "something_went_wrong"
-    if "request blocked" in body or "looks automated" in body:
-        return "request_blocked"
-    return None
 
 
 async def run_keyword_capture(
@@ -379,7 +337,7 @@ async def run_keyword_capture(
             await page.wait_for_selector("article, li, [role='listitem'], [data-testid]", timeout=10000)
         elif job.platform == "amazon":
             await page.wait_for_selector(".s-result-item, [data-component-type='s-search-result']", timeout=10000)
-        elif job.platform == "flipkart":
+        elif job.platform in ("flipkart", "flipkart_minutes"):
             await page.wait_for_selector("[data-id], .css-g5y9jx", timeout=10000)
     except Exception:
         pass
@@ -527,8 +485,7 @@ async def open_browser_context(
 
 
 def resolve_device(playwright: Any, platform: str = "") -> dict[str, Any]:
-    if platform == "swiggy_instamart":
-        return dict(DESKTOP_DEVICE)
+
     device = playwright.devices.get("Samsung Galaxy S20 Ultra")
     if device:
         return dict(device)
@@ -638,11 +595,11 @@ async def capture_visible_ad_placement(
                         viewport = page.viewport_size or {"width": 412, "height": 915}
                         vw = viewport["width"]
                         vh = viewport["height"]
-                        # Check if card is fully within viewport (below the 84px header)
+                        # Check if card is fully within viewport (below the 84px header and above the 20px bottom navigation bar, with safety margins)
                         if (box["x"] >= 0 and 
-                            box["y"] >= 84 and 
+                            box["y"] >= 94 and 
                             (box["x"] + box["width"]) <= vw and 
-                            (box["y"] + box["height"]) <= vh):
+                            (box["y"] + box["height"]) <= (vh - 30)):
                             is_fully_visible = True
                     
                     if not is_fully_visible:
@@ -1011,6 +968,10 @@ async def search_keyword(page: Any, spec: PlatformSpec, keyword: str) -> None:
         url = f"https://www.flipkart.com/search?q={urllib.parse.quote(keyword)}"
         await page.goto(url, wait_until="domcontentloaded", timeout=30000)
         return
+    if plat == "flipkart_minutes":
+        url = f"https://www.flipkart.com/search?q={urllib.parse.quote(keyword)}&marketplace=GROCERY"
+        await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        return
     if plat == "amazon":
         url = f"https://www.amazon.in/s?k={urllib.parse.quote(keyword)}"
         await page.goto(url, wait_until="domcontentloaded", timeout=30000)
@@ -1123,6 +1084,24 @@ def filter_cards_for_job(cards: list[dict[str, Any]], job: ScraperJob) -> list[d
                     matched_cards.append(card)
             else:
                 # Generic or competition keyword -> match any Parachute card
+                matched_cards.append(card)
+        return matched_cards
+
+    if "hair" in brand_lower and "care" in brand_lower:
+        matched_cards = []
+        for card in cards:
+            card_text = card.get("text", "")
+            if not text_matches_filter(card_text, job.brand_filter):
+                continue
+
+            keyword_toks = set(normalized_tokens(job.keyword))
+            card_toks = set(normalized_tokens(card_text))
+
+            # Almond hair oil product matching (Hair & Care Non-Sticky Hair Oil with Almond Vitamin E & B5)
+            if "almond" in keyword_toks or "oil" in keyword_toks:
+                if "almond" in card_toks or ("vitamin" in card_toks and "e" in card_toks):
+                    matched_cards.append(card)
+            else:
                 matched_cards.append(card)
         return matched_cards
 

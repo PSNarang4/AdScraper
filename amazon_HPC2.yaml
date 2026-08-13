@@ -1,0 +1,110 @@
+jobs:
+# --- Livon ---
+- platform: amazon
+  keyword: loreal shampoo 1 litre
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: tresemme shampoo
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: livon serum
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: hair serum for dry and frizzy hair
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: hair serum
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: tresemme
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: shampoo
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: loreal shampoo
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: shampoo 1 litre
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: hair serum for dry hair
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: hair serum for frizzy hair
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: hair serum for women
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: hair serum for men
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: livon hair serum
+  brand: livon
+  pincode: '122001'
+- platform: amazon
+  keyword: serum for hair
+  brand: livon
+  pincode: '122001'
+
+# --- Parachute ---
+- platform: amazon
+  keyword: hair cream
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: hair mask for men
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: hair cream for men
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: hair cream for women
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: hair mask
+  brand: Parachute
+  pincode: '122001'
+- platform: amazon
+  keyword: hair mask for dry hair
+  brand: Parachute
+  pincode: '122001'
+
+# --- Hair & Care ---
+- platform: amazon
+  keyword: almond oil for hair
+  brand: hair & care
+  pincode: '122001'
+- platform: amazon
+  keyword: almond hair oil
+  brand: hair & care
+  pincode: '122001'
+- platform: amazon
+  keyword: almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: amazon
+  keyword: sweet almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: amazon
+  keyword: sweet almond hair oil
+  brand: hair & care
+  pincode: '122001'

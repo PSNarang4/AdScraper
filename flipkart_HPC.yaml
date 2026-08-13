@@ -1,0 +1,204 @@
+jobs:
+# --- Flipkart Normal ---
+- platform: flipkart
+  keyword: Keratin shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: Hyaluron shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart
+  keyword: Hair serum
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Serum for hair
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby lotion
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby cream
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby gift pack
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby powder
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby soap
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby wipes
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Almond hair oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart
+  keyword: cream for baby
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: baby gift set
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart
+  keyword: Almond oil for hair
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart
+  keyword: Sweet almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby wash
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby cream for newborn
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby care kit
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Baby massage oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Hair serum for women
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Hair serum for men
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart
+  keyword: Shampoo
+  brand: Parachute
+  pincode: '122001'
+
+# --- Flipkart Minutes ---
+- platform: flipkart_minutes
+  keyword: Keratin shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Hyaluron shampoo
+  brand: livon
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Hair serum
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Serum for hair
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby lotion
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby cream
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby gift pack
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby powder
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby shampoo
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby soap
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby wipes
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Almond hair oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: cream for baby
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: baby gift set
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Almond oil for hair
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Sweet almond oil
+  brand: hair & care
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby wash
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby cream for newborn
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby care kit
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Baby massage oil
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Hair serum for women
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Hair serum for men
+  brand: Parachute
+  pincode: '122001'
+- platform: flipkart_minutes
+  keyword: Shampoo
+  brand: Parachute
+  pincode: '122001'
